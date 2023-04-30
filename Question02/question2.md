@@ -12,4 +12,4 @@
 42
 43
 ```
-> Foi impresso no cliente o atributo root que da conexão que da acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py que dentro do RPyC são elementos expostos.
+> Foi impresso no cliente o atributo root que da acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py que são elementos expostos.
