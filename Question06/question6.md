@@ -9,10 +9,10 @@ end = time.time()
 print(end-start)
 ```
 > Execute o cliente e servidor em máquinas diferentes para um vetor de 10000 posições.
----
+
 ## **Questão**:
 > Indique o tempo de execução para obter o resultado no cliente e o tempo para executar o procedimento no servidor.
----
+
 ## **Resposta**:
 
 > **Tempo no cliente para obter o resultado:** 100.28835463523865

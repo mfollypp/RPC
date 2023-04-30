@@ -2,10 +2,10 @@
 
 ## **Tarefa**:
 > Escreva um programa cliente que cria um vetor de n posições, onde n é definido pelo usuário, com elementos variando de 0 a n-1. Este procedimento chama um procedimento no servidor que soma os elementos do vetor e retorna o resultado da soma. O programa cliente deve imprimir o valor de soma.
----
+
 ## **Questão**:
 > Mostre o código do cliente e do servidor.
----
+
 ## **Resposta**:
 ### No server.py foi adicionado
 ```python

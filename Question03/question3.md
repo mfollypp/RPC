@@ -15,10 +15,10 @@ conn = rpyc.connect(server,18861)
 
 print(c.get_question)
 ```
----
+
 ## **Questão**:
 > Explique o que ocorreu.
----
+
 ## **Resposta**:
 ```python
 AttributeError: cannot access 'get_question'
