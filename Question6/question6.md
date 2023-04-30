@@ -18,3 +18,8 @@ print(end-start)
 > **Tempo no cliente para obter o resultado:** 100.28835463523865
 >
 > **Tempo para executar o procedimento no servidor:** 100.2725841999054
+
+### **OBS:** Foi utilizado o `sync_request_timeout` para modificar o valor padrão de 30s. O `sync_request_timeout` é responsável pelo tempo de timeout de espera por resultado, então se antes o default era 30s, se o tempo de espera por resposta do cliente com o servidor passasse de 30s, ele daria erro devido ao timeout.
+```python
+conn._config['sync_request_timeout'] = 240
+```

@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 server = sys.argv[1]
 
 conn = rpyc.connect(server,18861)
-conn._config['sync_request_timeout'] = 240 # Para evitar timeout enquanto está realizando as contas
+conn._config['sync_request_timeout'] = 240
 
 v = []
 start = time.time()
