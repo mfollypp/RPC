@@ -4,7 +4,6 @@ import time
 
 class MyService(rpyc.Service):
 
-    #----------------------------QUESTION 1 -----------------------------
     def on_connect(self, conn):
     # código que é executado quando uma conexão é iniciada, caso seja necessário
         pass
@@ -20,9 +19,7 @@ class MyService(rpyc.Service):
 
     def get_question(self): # este método não é exposto
         return "Qual é a cor do cavalo branco de Napoleão?"
-    #----------------------------QUESTION 1 -----------------------------
-
-    #----------------------------QUESTION 4 and 5 -----------------------------
+    
     def exposed_array_sum(self, array):
         start = time.time()
         sum = 0
@@ -31,7 +28,6 @@ class MyService(rpyc.Service):
         end = time.time()
         print(end - start)
         return sum
-    #----------------------------QUESTION 4 and 5 -----------------------------
 
 #Para iniciar o servidor
 if __name__ == "__main__":

@@ -8,6 +8,14 @@
 ---
 ## **Resposta**:
 
+### Cliente
 >| 100 | 1000 | 10000
 >| ----------- | ----------- | -----------
->| tempo1 | tempo2 | tempo3
+>| 0.009998798370361328 | 0.08600020408630371 | 0.7691152095794678
+
+### Servidor
+>| 100 | 1000 | 10000
+>| ----------- | ----------- | -----------
+>| 0.00899648666381836 | 0.08600020408630371 | 0.7681152820587158
+
+> Observa-se que o tempo para os 3 valores de n são bem próximos como o esperado por estarem sendo executados na mesma máquina
