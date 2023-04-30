@@ -9,6 +9,7 @@ if len(sys.argv) < 2:
 server = sys.argv[1]
 
 conn = rpyc.connect(server,18861)
+conn._config['sync_request_timeout'] = 240
 
 #----------------------------QUESTION 1 -----------------------------
 print(conn.root)
@@ -30,8 +31,15 @@ for i in range(n):
 print("The array sum is:", conn.root.array_sum(v))
 #----------------------------QUESTION 4 -----------------------------
 
-#----------------------------QUESTION 5 -----------------------------
+#----------------------------QUESTION 5 and 6 -----------------------------
 end = time.time()
 print(end - start)
-# 0.8626573085784912 no cliente e 0.8606574535369873 no servidor
-#----------------------------QUESTION 5 -----------------------------
+# 0.8626573085784912 no cliente e 0.8606574535369873 no servidor rodando na mesma maquina
+# 100.28835463523865 no cliente e 100.2725841999054 no servidor rodando em maquinas diferentes
+#----------------------------QUESTION 5 and 6 -----------------------------
+
+#----------------------------QUESTION 7 -----------------------------
+# Existe diferenca devido a latencia da conexao entre as maquinas e pelo fato que o
+# rpyc passa o vetor por referência, entao para cada elemento no vetor o rpyc fica
+# interagindo entre cliente e servidor, aumentando o tempo necessario para realizar a soma
+#----------------------------QUESTION 7 -----------------------------
