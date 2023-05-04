@@ -1,6 +1,6 @@
 # Relatório sobre o trabalho de RPC
 
-## A ideia principal do trabalho é implementar uma chamada remota a procedimento usando a biblioteca RPyC de Python.
+## A principal ideia do trabalho é implementar uma chamada remota a procedimento utilizando a biblioteca RPyC de Python.
 
 ## Grupo:
 - Matheus Folly
@@ -23,7 +23,7 @@
 42
 43
 ```
-> Foi impresso no cliente o atributo root que da conexão que da acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py que dentro do RPyC são elementos expostos.
+> Foi impresso no cliente: o atributo root que fornece acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py. Como os 3 são elementos expostos no server.py, o client.py consegue acessar.
 
 ---
 
@@ -41,7 +41,7 @@
 42
 43
 ```
-> Foi impresso no cliente o atributo root que da acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py que são elementos expostos.
+> Foi impresso no cliente: o atributo root que fornece acesso ao serviço exposto pelo servidor, o retorno da função exposed e o valor da variável exposed do server.py. Como os 3 são elementos expostos no server.py, o client.py consegue acessar.
 
 ---
 
@@ -70,7 +70,7 @@ print(c.get_question)
 ```python
 AttributeError: cannot access 'get_question'
 ```
-> O cliente não consegue acessar a função pois ela não está exposed no servidor, então toma o erro acima.
+> O client.py não consegue acessar a função pois ela não está como exposed no servidor, então ele retorna o erro acima de 'cannot access'.
 
 ---
 
@@ -172,7 +172,7 @@ conn._config['sync_request_timeout'] = 240
 > Existe diferença nos tempos obtidos? Explique a razão de existir diferença ou de não existir diferença.
 
 ## **Resposta**:
-> Existe diferença devido a latência da conexão entre as máquinas e pelo fato que o RPyC passa o vetor por referência, então para cada elemento no vetor o RPyC fica interagindo entre cliente e servidor, aumentando o tempo necessário para realizar a soma.
+> Existe diferença devido a latência da conexão entre as máquinas e pelo fato que o RPyC passa o vetor por referência, então para cada elemento no vetor, o RPyC fica interagindo entre cliente e servidor para acessar o próximo elemento, aumentando o tempo necessário para realizar a soma.
 
 ---
 
