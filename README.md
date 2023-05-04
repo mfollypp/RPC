@@ -9,7 +9,7 @@
 
 ---
 
-# **Questão 1**
+# [**Questão 1**](Question01/question1.md)
 
 ## **Tarefa**:
 > Execute o servidor em uma máquina e execute o cliente na mesma máquina. Para isso basta executar o programa python do servidor sem argumentos e o do cliente com o argumento "localhost".
@@ -27,7 +27,7 @@
 
 ---
 
-# **Questão 2**
+# [**Questão 2**](Question02/question2.md)
 
 ## **Tarefa**:
 > Execute o servidor em uma máquina e execute o cliente em outra máquina. Para isso basta executar o programa python do servidor sem argumentos e o do cliente em outra máquina com o argumento "nome_da_maquina_servidor".
@@ -45,7 +45,7 @@
 
 ---
 
-# **Questão 3**
+# [**Questão 3**](Question03/question3.md)
 
 ## **Tarefa**:
 > Execute o programa cliente abaixo na mesma máquina.
@@ -74,7 +74,7 @@ AttributeError: cannot access 'get_question'
 
 ---
 
-# **Questão 4**
+# [**Questão 4**](Question04/question4.md)
 
 ## **Tarefa**:
 > Escreva um programa cliente que cria um vetor de n posições, onde n é definido pelo usuário, com elementos variando de 0 a n-1. Este procedimento chama um procedimento no servidor que soma os elementos do vetor e retorna o resultado da soma. O programa cliente deve imprimir o valor de soma.
@@ -112,7 +112,7 @@ print("The array sum is:", conn.root.array_sum(v))
 
 ---
 
-# **Questão 5**
+# [**Questão 5**](Question05/question5.md)
 
 ## **Tarefa**:
 > Inclua no seu código do cliente e do servidor as instruções abaixo para medir o tempo de execução:
@@ -135,7 +135,7 @@ print(end-start)
 
 ---
 
-# **Questão 6**
+# [**Questão 6**](Question06/question6.md)
 
 ## **Tarefa**:
 > Inclua no seu código do cliente e do servidor as instruções abaixo para medir o tempo de execução:
@@ -163,7 +163,7 @@ conn._config['sync_request_timeout'] = 240
 
 ---
 
-# **Questão 7**
+# [**Questão 7**](Question07/question7.md)
 
 ## **Tarefa**:
 > Execute o cliente e servidor na mesma máquina para um vetor de 10000 posições. Depois, execute o cliente e servidor em máquinas diferentes para um vetor de 10000 posições.
@@ -176,7 +176,7 @@ conn._config['sync_request_timeout'] = 240
 
 ---
 
-# **Questão 8**
+# [**Questão 8**](Question08/question8.md)
 
 ## **Tarefa**:
 > Faça uma tabela mostrando o tempo de execução do cliente e servidor executando em uma mesma máquina, com n ={100, 1000, 10000}.
@@ -200,7 +200,7 @@ conn._config['sync_request_timeout'] = 240
 
 ---
 
-# **Questão 9**
+# [**Questão 9**](Question09/question9.md)
 
 ## **Tarefa**:
 > Faça uma tabela mostrando o tempo de execução do cliente e servidor executando em máquinas diferentes, com n ={100, 1000, 10000}.
@@ -229,7 +229,7 @@ conn._config['sync_request_timeout'] = 360
 
 ---
 
-# **Questão 10**
+# [**Questão 10**](Question10/question10.md)
 
 ## **Tarefa**:
 > Faça uma tabela mostrando o tempo de execução do cliente e servidor executando em uma mesma máquina, com n ={100, 1000, 10000}. Depois, faça uma tabela mostrando o tempo de execução do cliente e servidor executando em máquinas diferentes, com n ={100, 1000, 10000}.
